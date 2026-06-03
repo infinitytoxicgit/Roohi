@@ -1,0 +1,10 @@
+config.py
+.env
+*.session
+cookies.txt
+venv/
+__pycache__/
+*.webm
+*.mp4
+*.bak
+*.png
