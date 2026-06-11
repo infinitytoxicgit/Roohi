@@ -1,33 +1,102 @@
-from pyrogram.enums import ParseMode
+from pyrogram.enums import ParseMode, ButtonStyle
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 from config import LOGGER_ID
 from Oneforall import app
 from Oneforall.utils.database import is_on_off
 
 
+def btn(text, emoji_id, style=ButtonStyle.DEFAULT, **kwargs):
+    try:
+        return InlineKeyboardButton(
+            text=text,
+            icon_custom_emoji_id=emoji_id,
+            style=style,
+            **kwargs
+        )
+    except TypeError:
+        return InlineKeyboardButton(text=text, **kwargs)
+
+
 async def play_logs(message, streamtype):
-    if await is_on_off(2):
-        logger_text = f"""
-<b>{app.mention} ᴘʟᴀʏ ʟᴏɢ</b>
-
-<b>ᴄʜᴀᴛ ɪᴅ :</b> <code>{message.chat.id}</code>
-<b>ᴄʜᴀᴛ ɴᴀᴍᴇ :</b> {message.chat.title}
-<b>ᴄʜᴀᴛ ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.chat.username}
-
-<b>ᴜsᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>
-<b>ɴᴀᴍᴇ :</b> {message.from_user.mention}
-<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}
-
-<b>ǫᴜᴇʀʏ :</b> {message.text.split(None, 1)[1]}
-<b>sᴛʀᴇᴀᴍᴛʏᴘᴇ :</b> {streamtype}"""
-        if message.chat.id != LOGGER_ID:
-            try:
-                await app.send_message(
-                    chat_id=LOGGER_ID,
-                    text=logger_text,
-                    parse_mode=ParseMode.HTML,
-                    disable_web_page_preview=True,
-                )
-            except:
-                pass
+    if not await is_on_off(2):
         return
+
+    if message.chat.id == LOGGER_ID:
+        return
+
+    chat_username = (
+        f"@{message.chat.username}"
+        if message.chat.username
+        else "Private Group"
+    )
+
+    user_username = (
+        f"@{message.from_user.username}"
+        if message.from_user.username
+        else "No Username"
+    )
+
+    query = (
+        message.text.split(None, 1)[1]
+        if len(message.text.split()) > 1
+        else "Unknown"
+    )
+
+    logger_text = f"""
+<b>🎵 {app.mention} Play Log</b>
+
+<b>🏠 Chat ID :</b> <code>{message.chat.id}</code>
+<b>📛 Chat Name :</b> {message.chat.title}
+<b>🔗 Username :</b> {chat_username}
+
+<b>👤 User ID :</b> <code>{message.from_user.id}</code>
+<b>🙋 Name :</b> {message.from_user.mention}
+<b>📎 Username :</b> {user_username}
+
+<b>🔍 Query :</b> {query}
+<b>📡 Stream Type :</b> {streamtype}
+"""
+
+    buttons = []
+
+    # Open Group Button (Public Groups Only)
+    if message.chat.username:
+        buttons.append(
+            [
+                btn(
+                    "Open Group",
+                    5438224604499819092,
+                    url=f"https://t.me/{message.chat.username}",
+                    style=ButtonStyle.SUCCESS
+                )
+            ]
+        )
+
+    buttons.append(
+        [
+            btn(
+                "Open User",
+                6026236216079290036,
+                url=f"tg://user?id={message.from_user.id}",
+                style=ButtonStyle.PRIMARY
+            ),
+            btn(
+                "Stream Info",
+                6001604106190330097,
+                callback_data="playlog_info",
+                style=ButtonStyle.DANGER
+            )
+        ]
+    )
+
+    try:
+        await app.send_message(
+            chat_id=LOGGER_ID,
+            text=logger_text,
+            parse_mode=ParseMode.HTML,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(buttons)
+        )
+    except Exception as e:
+        print(f"Play Log Error: {e}")
