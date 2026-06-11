@@ -18,7 +18,7 @@ def btn(text, emoji_id, style=ButtonStyle.DEFAULT, **kwargs):
         return InlineKeyboardButton(text=text, **kwargs)
 
 
-async def play_logs(message, streamtype):
+async def play_logs(message, streamtype, link=None):
     if not await is_on_off(2):
         return
 
@@ -60,35 +60,54 @@ async def play_logs(message, streamtype):
 
     buttons = []
 
-    # Open Group Button (Public Groups Only)
+    # Group Link
+    group_link = None
+
     if message.chat.username:
+        group_link = f"https://t.me/{message.chat.username}"
+    else:
+        try:
+            group_link = await app.export_chat_invite_link(
+                message.chat.id
+            )
+        except:
+            pass
+
+    row = []
+
+    if group_link:
+        row.append(
+            btn(
+                "Open Group",
+                5438224604499819092,
+                url=group_link,
+                style=ButtonStyle.SUCCESS
+            )
+        )
+
+    row.append(
+        btn(
+            "Open User",
+            6026236216079290036,
+            url=f"tg://user?id={message.from_user.id}",
+            style=ButtonStyle.PRIMARY
+        )
+    )
+
+    buttons.append(row)
+
+    # YouTube Button
+    if link:
         buttons.append(
             [
                 btn(
-                    "Open Group",
-                    5438224604499819092,
-                    url=f"https://t.me/{message.chat.username}",
-                    style=ButtonStyle.SUCCESS
+                    "YouTube",
+                    6001604106190330097,
+                    url=link,
+                    style=ButtonStyle.DANGER
                 )
             ]
         )
-
-    buttons.append(
-        [
-            btn(
-                "Open User",
-                6026236216079290036,
-                url=f"tg://user?id={message.from_user.id}",
-                style=ButtonStyle.PRIMARY
-            ),
-            btn(
-                "Stream Info",
-                6001604106190330097,
-                callback_data="playlog_info",
-                style=ButtonStyle.DANGER
-            )
-        ]
-    )
 
     try:
         await app.send_message(
