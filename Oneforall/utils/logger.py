@@ -86,7 +86,7 @@ async def play_logs(message, streamtype, link=None):
         btn(
             "Open User",
             6026236216079290036,
-            url=f"tg://user?id={message.from_user.id}",
+            url=f"tg://openmessage?user_id={message.from_user.id}",
             style=ButtonStyle.PRIMARY
         )
     )
