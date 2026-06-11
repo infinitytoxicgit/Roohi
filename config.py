@@ -120,6 +120,8 @@ if START_IMG_URL:
     START_IMG_URL = random.choice(START_IMG_URL.split(","))
 else:
     START_IMG_URL = random.choice([
+
+"https://graph.org/file/04c9167f4c5f6c7263857-06574d12f7d9e655f8.jpg",
         "https://graph.org/file/2f8e61c55d311070339c8-17b572b5c7c8ad0907.jpg",
         "https://graph.org/file/1c82daf46ac2ec57b7827-3a05aa863a378ed34a.jpg",
 
