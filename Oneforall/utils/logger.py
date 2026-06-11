@@ -59,23 +59,17 @@ async def play_logs(message, streamtype, link=None):
 """
 
     buttons = []
+    row = []
 
-    # Group Link
-    group_link = None
-
-    if message.chat.username:
-        group_link = f"https://t.me/{message.chat.username}"
-    else:
-        try:
+    # Public / Private Group Link
+    try:
+        if message.chat.username:
+            group_link = f"https://t.me/{message.chat.username}"
+        else:
             group_link = await app.export_chat_invite_link(
                 message.chat.id
             )
-        except:
-            pass
 
-    row = []
-
-    if group_link:
         row.append(
             btn(
                 "Open Group",
@@ -84,7 +78,10 @@ async def play_logs(message, streamtype, link=None):
                 style=ButtonStyle.SUCCESS
             )
         )
+    except Exception:
+        pass
 
+    # User Button
     row.append(
         btn(
             "Open User",
@@ -94,10 +91,14 @@ async def play_logs(message, streamtype, link=None):
         )
     )
 
-    buttons.append(row)
+    if row:
+        buttons.append(row)
 
     # YouTube Button
-    if link:
+    if link and (
+        "youtube.com" in link
+        or "youtu.be" in link
+    ):
         buttons.append(
             [
                 btn(
