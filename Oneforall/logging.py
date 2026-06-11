@@ -1,4 +1,5 @@
 import logging
+from config import SUDOERS  # sudo user IDs list
 
 logging.basicConfig(
     level=logging.INFO,
@@ -17,5 +18,10 @@ logging.getLogger("pymongo").setLevel(logging.ERROR)
 logging.getLogger("ntgcalls").setLevel(logging.ERROR)
 
 
-def LOGGER(name: str) -> logging.Logger:
+def LOGGER(name: str):
     return logging.getLogger(name)
+
+
+def SUDO_LOG(user_id: int, message: str):
+    if user_id in SUDOERS:
+        LOGGER("SUDOERS").info(message)
