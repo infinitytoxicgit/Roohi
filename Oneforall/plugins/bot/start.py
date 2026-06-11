@@ -35,6 +35,8 @@ FORCE_CHANNEL_1 = config.FORCE_CHANNEL_1
 FORCE_CHANNEL_2 = config.FORCE_CHANNEL_2
 
 NEXT_IMG = [
+
+"https://graph.org/file/04c9167f4c5f6c7263857-06574d12f7d9e655f8.jpg",
     "https://graph.org/file/1c82daf46ac2ec57b7827-3a05aa863a378ed34a.jpg",
 
 "https://graph.org/file/2f8e61c55d311070339c8-17b572b5c7c8ad0907.jpg",
