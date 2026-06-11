@@ -15,7 +15,7 @@ API_HASH = os.getenv("API_HASH", "80baadcfd00a39a0ff1f5f529d23156f")
 
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = os.getenv("BOT_TOKEN","")
-SUDOERS = [8564072723]" 
+SUDOERS = [8564072723] 
 
 YOUTUBE_API_KEY = os.getenv("")
 # OpenAI Token
