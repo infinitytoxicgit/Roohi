@@ -174,9 +174,9 @@ class YouTubeAPI:
         if "&" in link:
             link = link.split("&")[0]
         proc = await asyncio.create_subprocess_exec(
-            "yt-dlp","--remote-components","ejs:github","--js-runtimes","bun","--cookies","/home/nand/cookies/youtube.txt",
+            "yt-dlp","--remote-components","ejs:github","--js-runtimes","bun","--cookies","/root/Roohi/youtube.txt",
             "--cookies",
-            "/home/nand/cookies/youtube.txt",
+            "/root/Roohi/youtube.txt",
             "-g",
             "-f",
             "best",
@@ -233,7 +233,7 @@ class YouTubeAPI:
             link = self.base + link
         if "&" in link:
             link = link.split("&")[0]
-        ytdl_opts = {"quiet": True, "cookiefile": "/home/nand/cookies/youtube.txt"}
+        ytdl_opts = {"quiet": True, "cookiefile": "/root/Roohi/youtube.txt"}
         ydl = yt_dlp.YoutubeDL(ytdl_opts)
         with ydl:
             formats_available = []
@@ -310,7 +310,7 @@ class YouTubeAPI:
                 "nocheckcertificate": True,
                 "quiet": True,
                 "no_warnings": True,
-                "cookiefile": "/home/nand/cookies/youtube.txt",
+                "cookiefile": "/root/Roohi/youtube.txt",
                 "extractor_args": {
                     "youtube": {
                         "player_client": ["mweb"],
@@ -342,7 +342,7 @@ class YouTubeAPI:
                 "nocheckcertificate": True,
                 "quiet": True,
                 "no_warnings": True,
-                "cookiefile": "/home/nand/cookies/youtube.txt",
+                "cookiefile": "/root/Roohi/youtube.txt",
                 "extractor_args": {
                     "youtube": {
                         "player_client": ["mweb"],
@@ -381,7 +381,7 @@ class YouTubeAPI:
                 "no_warnings": True,
                 "prefer_ffmpeg": True,
                 "merge_output_format": "mp4",
-                "cookiefile": "/home/nand/cookies/youtube.txt",
+                "cookiefile": "/root/Roohi/youtube.txt",
                 "extractor_args": {"youtube": {"player_client": ["mweb"]}},
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
@@ -404,7 +404,7 @@ class YouTubeAPI:
                         "preferredquality": "192",
                     }
                 ],
-                "cookiefile": "/home/nand/cookies/youtube.txt",
+                "cookiefile": "/root/Roohi/youtube.txt",
                 "extractor_args": {"youtube": {"player_client": ["mweb"]}},
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
