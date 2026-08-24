@@ -1,5 +1,5 @@
 from pyrogram.types import InlineKeyboardMarkup
-from pyrogram.enums import ButtonStyle
+from pyrogram.enums.button_style import ButtonStyle
 from Oneforall import app
 from Oneforall.utils.inline.start import btn
 

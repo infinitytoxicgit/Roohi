@@ -1,13 +1,14 @@
 from os import path
+import traceback
 import yt_dlp
 
-ytdl = yt_dlp.YoutubeDL({"extractor_args": {"youtube": {"player_client": ["web_creator"], "player_skip": ["web_embedded_web_player"]}},
+ytdl = yt_dlp.YoutubeDL({"extractor_args": {"youtube": {"player_client": ["mweb"]}},
     "outtmpl": "downloads/%(id)s.%(ext)s",
     "format": "bestaudio/best",
     "geo_bypass": True,
     "nocheckcertificate": True,
-    "cookiefile": "/root/cookies/youtube.txt",
-    "js_runtimes": {"bun": "/root/.bun/bin/bun"},
+    "cookiefile": "/home/nand/cookies/youtube.txt",
+    "js_runtimes": {"node": {"path": "/usr/bin/node"}},
     "remote_components": ["ejs:github"],
 })
 
@@ -22,9 +23,14 @@ def download(url: str, my_hook) -> str:
         "outtmpl": "downloads/%(id)s.%(ext)s",
         "geo_bypass": True,
         "nocheckcertificate": True,
-    "cookiefile": "/root/cookies/youtube.txt",
-    "js_runtimes": {"bun": "/root/.bun/bin/bun"},
-    "remote_components": ["ejs:github"],
+        "cookiefile": "/home/nand/cookies/youtube.txt",
+        "js_runtimes": {"node": {"path": "/usr/bin/node"}},
+        "remote_components": ["ejs:github"],
+        "extractor_args": {
+            "youtube": {
+                "player_client": ["mweb"],
+            }
+        },
         "quiet": True,
         "no_warnings": True,
     }
@@ -41,7 +47,8 @@ def download(url: str, my_hook) -> str:
             info = info["entries"][0]
 
     except Exception as y_e:
-        print(y_e)
+        print("YT-DLP ERROR:", repr(y_e))
+        traceback.print_exc()
         return None
 
     # ✅ correct file path

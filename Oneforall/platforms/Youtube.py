@@ -174,9 +174,9 @@ class YouTubeAPI:
         if "&" in link:
             link = link.split("&")[0]
         proc = await asyncio.create_subprocess_exec(
-            "yt-dlp","--remote-components","ejs:github","--js-runtimes","bun","--cookies","/root/cookies/youtube.txt",
+            "yt-dlp","--remote-components","ejs:github","--js-runtimes","bun","--cookies","/home/nand/cookies/youtube.txt",
             "--cookies",
-            "/root/cookies/youtube.txt",
+            "/home/nand/cookies/youtube.txt",
             "-g",
             "-f",
             "best",
@@ -233,7 +233,7 @@ class YouTubeAPI:
             link = self.base + link
         if "&" in link:
             link = link.split("&")[0]
-        ytdl_opts = {"quiet": True, "cookiefile": "/root/cookies/youtube.txt"}
+        ytdl_opts = {"quiet": True, "cookiefile": "/home/nand/cookies/youtube.txt"}
         ydl = yt_dlp.YoutubeDL(ytdl_opts)
         with ydl:
             formats_available = []
@@ -304,20 +304,31 @@ class YouTubeAPI:
 
         def audio_dl():
             ydl_optssx = {
-                "format": "bestaudio/best",
-    "cookiefile": "/root/cookies/youtube.txt",
-    "js_runtimes": {"bun": {"path": "/root/.bun/bin/bun"}},
-    "remote_components": ["ejs:github"],
+                "format": "18/best[ext=mp4]/best",
                 "outtmpl": "downloads/%(id)s.%(ext)s",
                 "geo_bypass": True,
                 "nocheckcertificate": True,
                 "quiet": True,
                 "no_warnings": True,
-                "cookiefile": "/root/cookies/youtube.txt",
+                "cookiefile": "/home/nand/cookies/youtube.txt",
+                "extractor_args": {
+                    "youtube": {
+                        "player_client": ["mweb"],
+                    }
+                },
+                "js_runtimes": {
+                    "node": {
+                        "path": "/usr/bin/node"
+                    }
+                },
+                "remote_components": ["ejs:github"],
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
-            info = x.extract_info(link, False)
-            xyz = os.path.join("downloads", f"{info['id']}.{info['ext']}")
+            info = x.extract_info(link, download=False)
+            xyz = os.path.join(
+                "downloads",
+                f"{info['id']}.{info['ext']}"
+            )
             if os.path.exists(xyz):
                 return xyz
             x.download([link])
@@ -325,22 +336,36 @@ class YouTubeAPI:
 
         def video_dl():
             ydl_optssx = {
-                "format": "bestaudio/best",
-    "cookiefile": "/root/cookies/youtube.txt",
-    "js_runtimes": {"bun": {"path": "/root/.bun/bin/bun"}},
-    "remote_components": ["ejs:github"],
+                "format": "18/best[ext=mp4]/best",
                 "outtmpl": "downloads/%(id)s.%(ext)s",
                 "geo_bypass": True,
                 "nocheckcertificate": True,
                 "quiet": True,
                 "no_warnings": True,
-                "cookiefile": "/root/cookies/youtube.txt",
+                "cookiefile": "/home/nand/cookies/youtube.txt",
+                "extractor_args": {
+                    "youtube": {
+                        "player_client": ["mweb"],
+                    }
+                },
+                "js_runtimes": {
+                    "node": {
+                        "path": "/usr/bin/node"
+                    }
+                },
+                "remote_components": ["ejs:github"],
             }
+
             x = yt_dlp.YoutubeDL(ydl_optssx)
-            info = x.extract_info(link, False)
-            xyz = os.path.join("downloads", f"{info['id']}.{info['ext']}")
+            info = x.extract_info(link, download=False)
+            xyz = os.path.join(
+                "downloads",
+                f"{info['id']}.{info['ext']}"
+            )
+
             if os.path.exists(xyz):
                 return xyz
+
             x.download([link])
             return xyz
 
@@ -356,7 +381,8 @@ class YouTubeAPI:
                 "no_warnings": True,
                 "prefer_ffmpeg": True,
                 "merge_output_format": "mp4",
-                "cookiefile": "/root/cookies/youtube.txt",
+                "cookiefile": "/home/nand/cookies/youtube.txt",
+                "extractor_args": {"youtube": {"player_client": ["mweb"]}},
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             x.download([link])
@@ -378,7 +404,8 @@ class YouTubeAPI:
                         "preferredquality": "192",
                     }
                 ],
-                "cookiefile": "/root/cookies/youtube.txt",
+                "cookiefile": "/home/nand/cookies/youtube.txt",
+                "extractor_args": {"youtube": {"player_client": ["mweb"]}},
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             x.download([link])
@@ -393,30 +420,16 @@ class YouTubeAPI:
             fpath = f"downloads/{title}.mp3"
             return fpath
         elif video:
-            if await is_on_off(2):
-                direct = True
-                downloaded_file = await loop.run_in_executor(None, video_dl)
-            else:
-                proc = await asyncio.create_subprocess_exec(
-                    "yt-dlp","--remote-components","ejs:github","--js-runtimes","bun","--cookies","/root/cookies/youtube.txt",
-                    "-g",
-                    "-f",
-                    "best",
-                    f"{link}",
-                    stdout=asyncio.subprocess.PIPE,
-                    stderr=asyncio.subprocess.PIPE,
-                )
-                stdout, stderr = await proc.communicate()
-                if stdout:
-                    downloaded_file = stdout.decode().split("\n")[0]
-                    direct = None
-                else:
-                    return None, None
+            direct = True
+            downloaded_file = await loop.run_in_executor(
+                None, video_dl
+            )
         else:
             direct = True
-            downloaded_file = await loop.run_in_executor(None, audio_dl)
-        if not downloaded_file:
-            raise Exception("yt-dlp returned empty file/stream")
+            downloaded_file = await loop.run_in_executor(
+                None, audio_dl
+            )
+
         if not downloaded_file:
             raise Exception("yt-dlp returned empty file/stream")
         return downloaded_file, direct
