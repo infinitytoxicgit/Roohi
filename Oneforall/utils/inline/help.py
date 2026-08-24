@@ -106,7 +106,7 @@ def help_pannel(_, START=None):
                 btn(
                     "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴏᴏʜɪ ✨",
                     5222287908148371157,
-                    url="https://t.me/Go_And_Love_Yourself_Brother",
+                    url="https://t.me/Roohi_Soul_Gc",
                     style=ButtonStyle.SUCCESS
                 ),
             ],
