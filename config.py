@@ -10,8 +10,8 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(os.getenv("API_ID", "35218869"))
-API_HASH = os.getenv("API_HASH", "80baadcfd00a39a0ff1f5f529d23156f")
+API_ID = int(os.getenv("API_ID", ""))
+API_HASH = os.getenv("API_HASH", "")
 
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = os.getenv("BOT_TOKEN","")
@@ -37,8 +37,8 @@ SUDO_USERS = list(map(int, os.getenv("SUDO_USERS", "8564072723").split()))
 
 ## Fill these variables if you're deploying on heroku.
 
-FORCE_CHANNEL_1 = os.getenv("FORCE_CHANNEL_1", "https://t.me/dark_musictm")
-FORCE_CHANNEL_2 = os.getenv("FORCE_CHANNEL_2", "https://t.me/docker_git_bit")
+FORCE_CHANNEL_1 = os.getenv("FORCE_CHANNEL_1", "https://t.me/Roohi_Soul")
+FORCE_CHANNEL_2 = os.getenv("FORCE_CHANNEL_2", "https://t.me/Roohi_Soul_Gc")
 
 # Your heroku app name
 HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME")
@@ -54,8 +54,8 @@ GIT_TOKEN = os.getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = os.getenv("SUPPORT_CHANNEL", "https://t.me/PhilosSoul")
-SUPPORT_CHAT = os.getenv("SUPPORT_CHAT", "https://t.me/chattingzone0")
+SUPPORT_CHANNEL = os.getenv("SUPPORT_CHANNEL", "https://t.me/Roohi_Soul")
+SUPPORT_CHAT = os.getenv("SUPPORT_CHAT", "https://t.me/Roohi_Soul_Gc")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(os.getenv("AUTO_LEAVING_ASSISTANT", False))
