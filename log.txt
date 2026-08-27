@@ -108363,3 +108363,483 @@ Traceback (most recent call last):
   File "/root/Testing-/venv/lib/python3.10/site-packages/pytgcalls/mtproto/pyrogram_client.py", line 90, in on_update
     chat_id = self.chat_id(data2[update.chat_id])
 AttributeError: 'UpdateGroupCall' object has no attribute 'chat_id'
+[26-Aug-26 20:33:14 - INFO] - Oneforall.core.dir - Directories Updated.
+[26-Aug-26 20:33:14 - INFO] - Oneforall.core.git - Git Client Found [VPS DEPLOYER]
+[26-Aug-26 20:33:14 - INFO] - Oneforall.misc -  Database loaded..
+[26-Aug-26 20:33:14 - INFO] - Oneforall.core.bot - Starting Bot...
+[26-Aug-26 20:33:15 - INFO] - Oneforall.misc - Sudo users loaded...
+[26-Aug-26 20:33:22 - INFO] - Oneforall.core.bot - Music Bot Started as 𓆩ℛᴜ֟፝ʜɪ 𓆩ꨄ︎𓆪 𝐌ᴜ֟፝sɪᴄ𓆪˼ 
+[26-Aug-26 20:33:46 - INFO] - Oneforall.core.dir - Directories Updated.
+[26-Aug-26 20:33:46 - INFO] - Oneforall.core.git - Git Client Found [VPS DEPLOYER]
+[26-Aug-26 20:33:46 - INFO] - Oneforall.misc -  Database loaded..
+[26-Aug-26 20:33:46 - INFO] - Oneforall.core.bot - Starting Bot...
+[26-Aug-26 20:33:47 - INFO] - Oneforall.misc - Sudo users loaded...
+[26-Aug-26 20:33:59 - INFO] - Oneforall.core.dir - Directories Updated.
+[26-Aug-26 20:33:59 - INFO] - Oneforall.core.git - Git Client Found [VPS DEPLOYER]
+[26-Aug-26 20:33:59 - INFO] - Oneforall.misc -  Database loaded..
+[26-Aug-26 20:33:59 - INFO] - Oneforall.core.bot - Starting Bot...
+[26-Aug-26 20:34:00 - INFO] - Oneforall.misc - Sudo users loaded...
+[26-Aug-26 20:34:08 - INFO] - Oneforall.core.bot - Music Bot Started as 𓆩ℛᴜ֟፝ʜɪ 𓆩ꨄ︎𓆪 𝐌ᴜ֟፝sɪᴄ𓆪˼ 
+[26-Aug-26 20:34:08 - INFO] - Oneforall.plugins - Successfully Imported Modules...
+[26-Aug-26 20:34:08 - INFO] - Oneforall.core.userbot - Starting Assistants...
+[26-Aug-26 20:34:08 - INFO] - Oneforall.core.userbot - Assistant Started as <a href=tg://user?id=7190723687>˹ 𓆩ℛᴏ֟፝ᴏʜɪ ⚡ ᴀssɪsᴛᴀɴᴛ ˼ ♪</a>
+[26-Aug-26 20:34:08 - INFO] - Oneforall.core.call - Starting PyTgCalls Client...
+
+[26-Aug-26 20:34:18 - INFO] - Oneforall  - ᴅʀᴏᴘ ʏᴏᴜʀ ɢɪʀʟꜰʀɪᴇɴᴅ'ꜱ ɴᴜᴍʙᴇʀ ᴀᴛ  ᴊᴏɪɴ https://t.me/PiratesMainchat ꜰᴏʀ ᴀɴʏ ɪꜱꜱᴜᴇꜱ
+[26-Aug-26 20:34:29 - ERROR] - pyrogram.dispatcher - Unexpected exception raised in RawUpdateHandler:
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 448, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto/pyrogram_client.py", line 90, in on_update
+    chat_id = self.chat_id(data2[update.chat_id])
+AttributeError: 'UpdateGroupCall' object has no attribute 'chat_id'
+[26-Aug-26 20:34:32 - INFO] - Oneforall.core.userbot - Stopping Assistants...
+[26-Aug-26 20:34:32 - INFO] - Oneforall - Stopping One for all Bot...
+[26-Aug-26 20:37:12 - INFO] - Oneforall.core.dir - Directories Updated.
+[26-Aug-26 20:37:12 - INFO] - Oneforall.core.git - Git Client Found [VPS DEPLOYER]
+[26-Aug-26 20:37:12 - INFO] - Oneforall.misc -  Database loaded..
+[26-Aug-26 20:37:12 - INFO] - Oneforall.core.bot - Starting Bot...
+[26-Aug-26 20:37:12 - INFO] - Oneforall.misc - Sudo users loaded...
+[26-Aug-26 20:37:20 - INFO] - Oneforall.core.bot - Music Bot Started as 𓆩ℛᴜ֟፝ʜɪ 𓆩ꨄ︎𓆪 𝐌ᴜ֟፝sɪᴄ𓆪˼ 
+[26-Aug-26 20:37:21 - INFO] - Oneforall.plugins - Successfully Imported Modules...
+[26-Aug-26 20:37:21 - INFO] - Oneforall.core.userbot - Starting Assistants...
+[26-Aug-26 20:37:21 - INFO] - Oneforall.core.userbot - Assistant Started as <a href=tg://user?id=7190723687>˹ 𓆩ℛᴏ֟፝ᴏʜɪ ⚡ ᴀssɪsᴛᴀɴᴛ ˼ ♪</a>
+[26-Aug-26 20:37:21 - INFO] - Oneforall.core.call - Starting PyTgCalls Client...
+
+[26-Aug-26 20:37:31 - INFO] - Oneforall  - ᴅʀᴏᴘ ʏᴏᴜʀ ɢɪʀʟꜰʀɪᴇɴᴅ'ꜱ ɴᴜᴍʙᴇʀ ᴀᴛ  ᴊᴏɪɴ https://t.me/PiratesMainchat ꜰᴏʀ ᴀɴʏ ɪꜱꜱᴜᴇꜱ
+[26-Aug-26 20:38:56 - INFO] - Oneforall.core.userbot - Stopping Assistants...
+[26-Aug-26 20:38:56 - INFO] - Oneforall - Stopping One for all Bot...
+[26-Aug-26 20:50:03 - INFO] - Oneforall.core.dir - Directories Updated.
+[26-Aug-26 20:50:03 - INFO] - Oneforall.core.git - Git Client Found [VPS DEPLOYER]
+[26-Aug-26 20:50:03 - INFO] - Oneforall.misc -  Database loaded..
+[26-Aug-26 20:50:03 - INFO] - Oneforall.core.bot - Starting Bot...
+[26-Aug-26 20:50:04 - INFO] - Oneforall.misc - Sudo users loaded...
+[26-Aug-26 20:50:12 - INFO] - Oneforall.core.bot - Music Bot Started as 𓆩ℛᴜ֟፝ʜɪ 𓆩ꨄ︎𓆪 𝐌ᴜ֟፝sɪᴄ𓆪˼ 
+[26-Aug-26 20:50:12 - INFO] - Oneforall.plugins - Successfully Imported Modules...
+[26-Aug-26 20:50:12 - INFO] - Oneforall.core.userbot - Starting Assistants...
+[26-Aug-26 20:50:12 - INFO] - Oneforall.core.userbot - Assistant Started as <a href=tg://user?id=7190723687>˹ 𓆩ℛᴏ֟፝ᴏʜɪ ⚡ ᴀssɪsᴛᴀɴᴛ ˼ ♪</a>
+[26-Aug-26 20:50:12 - INFO] - Oneforall.core.call - Starting PyTgCalls Client...
+
+[26-Aug-26 20:50:21 - INFO] - Oneforall  - ᴅʀᴏᴘ ʏᴏᴜʀ ɢɪʀʟꜰʀɪᴇɴᴅ'ꜱ ɴᴜᴍʙᴇʀ ᴀᴛ  ᴊᴏɪɴ https://t.me/PiratesMainchat ꜰᴏʀ ᴀɴʏ ɪꜱꜱᴜᴇꜱ
+[26-Aug-26 20:50:43 - INFO] - Oneforall.core.userbot - Stopping Assistants...
+[26-Aug-26 20:50:43 - INFO] - Oneforall - Stopping One for all Bot...
+[27-Aug-26 11:44:43 - INFO] - Oneforall.core.dir - Directories Updated.
+[27-Aug-26 11:44:43 - INFO] - Oneforall.core.git - Git Client Found [VPS DEPLOYER]
+[27-Aug-26 11:44:43 - INFO] - Oneforall.misc -  Database loaded..
+[27-Aug-26 11:44:43 - INFO] - Oneforall.core.bot - Starting Bot...
+[27-Aug-26 11:44:44 - INFO] - Oneforall.misc - Sudo users loaded...
+[27-Aug-26 11:44:52 - INFO] - Oneforall.core.bot - Music Bot Started as 𓆩ℛᴜ֟፝ʜɪ 𓆩ꨄ︎𓆪 𝐌ᴜ֟፝sɪᴄ𓆪˼ 
+[27-Aug-26 11:44:52 - INFO] - Oneforall.plugins - Successfully Imported Modules...
+[27-Aug-26 11:44:52 - INFO] - Oneforall.core.userbot - Starting Assistants...
+[27-Aug-26 11:44:53 - INFO] - Oneforall.core.userbot - Assistant Started as <a href=tg://user?id=7190723687>˹ 𓆩ℛᴏ֟፝ᴏʜɪ ⚡ ᴀssɪsᴛᴀɴᴛ ˼ ♪</a>
+[27-Aug-26 11:44:53 - INFO] - Oneforall.core.call - Starting PyTgCalls Client...
+
+[27-Aug-26 11:45:07 - INFO] - Oneforall  - ᴅʀᴏᴘ ʏᴏᴜʀ ɢɪʀʟꜰʀɪᴇɴᴅ'ꜱ ɴᴜᴍʙᴇʀ ᴀᴛ  ᴊᴏɪɴ https://t.me/PiratesMainchat ꜰᴏʀ ᴀɴʏ ɪꜱꜱᴜᴇꜱ
+[27-Aug-26 11:45:19 - INFO] - Oneforall.core.userbot - Stopping Assistants...
+[27-Aug-26 11:45:19 - INFO] - Oneforall - Stopping One for all Bot...
+[27-Aug-26 11:51:30 - INFO] - Oneforall.core.dir - Directories Updated.
+[27-Aug-26 11:51:30 - INFO] - Oneforall.core.git - Git Client Found [VPS DEPLOYER]
+[27-Aug-26 11:51:30 - INFO] - Oneforall.misc -  Database loaded..
+[27-Aug-26 11:51:30 - INFO] - Oneforall.core.bot - Starting Bot...
+[27-Aug-26 11:51:31 - INFO] - Oneforall.misc - Sudo users loaded...
+[27-Aug-26 11:51:39 - INFO] - Oneforall.core.bot - Music Bot Started as 𓆩ℛᴜ֟፝ʜɪ 𓆩ꨄ︎𓆪 𝐌ᴜ֟፝sɪᴄ𓆪˼ 
+[27-Aug-26 11:51:39 - INFO] - Oneforall.plugins - Successfully Imported Modules...
+[27-Aug-26 11:51:39 - INFO] - Oneforall.core.userbot - Starting Assistants...
+[27-Aug-26 11:51:39 - INFO] - Oneforall.core.userbot - Assistant Started as <a href=tg://user?id=7190723687>˹ 𓆩ℛᴏ֟፝ᴏʜɪ ⚡ ᴀssɪsᴛᴀɴᴛ ˼ ♪</a>
+[27-Aug-26 11:51:39 - INFO] - Oneforall.core.call - Starting PyTgCalls Client...
+
+[27-Aug-26 11:51:49 - INFO] - Oneforall  - ᴅʀᴏᴘ ʏᴏᴜʀ ɢɪʀʟꜰʀɪᴇɴᴅ'ꜱ ɴᴜᴍʙᴇʀ ᴀᴛ  ᴊᴏɪɴ https://t.me/PiratesMainchat ꜰᴏʀ ᴀɴʏ ɪꜱꜱᴜᴇꜱ
+[27-Aug-26 11:52:04 - INFO] - Oneforall.core.userbot - Stopping Assistants...
+[27-Aug-26 11:52:04 - INFO] - Oneforall - Stopping One for all Bot...
+[27-Aug-26 11:55:05 - INFO] - Oneforall.core.dir - Directories Updated.
+[27-Aug-26 11:55:05 - INFO] - Oneforall.core.git - Git Client Found [VPS DEPLOYER]
+[27-Aug-26 11:55:05 - INFO] - Oneforall.misc -  Database loaded..
+[27-Aug-26 11:55:05 - INFO] - Oneforall.core.bot - Starting Bot...
+[27-Aug-26 11:55:06 - INFO] - Oneforall.misc - Sudo users loaded...
+[27-Aug-26 11:55:13 - INFO] - Oneforall.core.bot - Music Bot Started as 𓆩ℛᴜ֟፝ʜɪ 𓆩ꨄ︎𓆪 𝐌ᴜ֟፝sɪᴄ𓆪˼ 
+[27-Aug-26 11:55:14 - INFO] - Oneforall.plugins - Successfully Imported Modules...
+[27-Aug-26 11:55:14 - INFO] - Oneforall.core.userbot - Starting Assistants...
+[27-Aug-26 11:55:14 - INFO] - Oneforall.core.userbot - Assistant Started as <a href=tg://user?id=7190723687>˹ 𓆩ℛᴏ֟፝ᴏʜɪ ⚡ ᴀssɪsᴛᴀɴᴛ ˼ ♪</a>
+[27-Aug-26 11:55:14 - INFO] - Oneforall.core.call - Starting PyTgCalls Client...
+
+[27-Aug-26 11:55:24 - INFO] - Oneforall  - ᴅʀᴏᴘ ʏᴏᴜʀ ɢɪʀʟꜰʀɪᴇɴᴅ'ꜱ ɴᴜᴍʙᴇʀ ᴀᴛ  ᴊᴏɪɴ https://t.me/PiratesMainchat ꜰᴏʀ ᴀɴʏ ɪꜱꜱᴜᴇꜱ
+[27-Aug-26 11:55:53 - INFO] - Oneforall.core.userbot - Stopping Assistants...
+[27-Aug-26 11:55:53 - INFO] - Oneforall - Stopping One for all Bot...
+[27-Aug-26 11:59:28 - INFO] - Oneforall.core.dir - Directories Updated.
+[27-Aug-26 11:59:28 - INFO] - Oneforall.core.git - Git Client Found [VPS DEPLOYER]
+[27-Aug-26 11:59:28 - INFO] - Oneforall.misc -  Database loaded..
+[27-Aug-26 11:59:28 - INFO] - Oneforall.core.bot - Starting Bot...
+[27-Aug-26 11:59:29 - INFO] - Oneforall.misc - Sudo users loaded...
+[27-Aug-26 11:59:37 - INFO] - Oneforall.core.bot - Music Bot Started as 𓆩ℛᴜ֟፝ʜɪ 𓆩ꨄ︎𓆪 𝐌ᴜ֟፝sɪᴄ𓆪˼ 
+[27-Aug-26 11:59:37 - INFO] - Oneforall.plugins - Successfully Imported Modules...
+[27-Aug-26 11:59:37 - INFO] - Oneforall.core.userbot - Starting Assistants...
+[27-Aug-26 11:59:38 - INFO] - Oneforall.core.userbot - Assistant Started as <a href=tg://user?id=7190723687>˹ 𓆩ℛᴏ֟፝ᴏʜɪ ⚡ ᴀssɪsᴛᴀɴᴛ ˼ ♪</a>
+[27-Aug-26 11:59:38 - INFO] - Oneforall.core.call - Starting PyTgCalls Client...
+
+[27-Aug-26 11:59:48 - INFO] - Oneforall  - ᴅʀᴏᴘ ʏᴏᴜʀ ɢɪʀʟꜰʀɪᴇɴᴅ'ꜱ ɴᴜᴍʙᴇʀ ᴀᴛ  ᴊᴏɪɴ https://t.me/PiratesMainchat ꜰᴏʀ ᴀɴʏ ɪꜱꜱᴜᴇꜱ
+[27-Aug-26 12:00:39 - INFO] - Oneforall.core.userbot - Stopping Assistants...
+[27-Aug-26 12:00:39 - INFO] - Oneforall - Stopping One for all Bot...
+[27-Aug-26 12:14:24 - INFO] - Oneforall.core.dir - Directories Updated.
+[27-Aug-26 12:14:24 - INFO] - Oneforall.core.git - Git Client Found [VPS DEPLOYER]
+[27-Aug-26 12:14:24 - INFO] - Oneforall.misc -  Database loaded..
+[27-Aug-26 12:14:24 - INFO] - Oneforall.core.bot - Starting Bot...
+[27-Aug-26 12:14:25 - INFO] - Oneforall.misc - Sudo users loaded...
+[27-Aug-26 12:14:33 - INFO] - Oneforall.core.bot - Music Bot Started as 𓆩ℛᴜ֟፝ʜɪ 𓆩ꨄ︎𓆪 𝐌ᴜ֟፝sɪᴄ𓆪˼ 
+[27-Aug-26 12:14:33 - INFO] - Oneforall.plugins - Successfully Imported Modules...
+[27-Aug-26 12:14:33 - INFO] - Oneforall.core.userbot - Starting Assistants...
+[27-Aug-26 12:14:34 - INFO] - Oneforall.core.userbot - Assistant Started as <a href=tg://user?id=7190723687>˹ 𓆩ℛᴏ֟፝ᴏʜɪ ⚡ ᴀssɪsᴛᴀɴᴛ ˼ ♪</a>
+[27-Aug-26 12:14:34 - INFO] - Oneforall.core.call - Starting PyTgCalls Client...
+
+[27-Aug-26 12:14:43 - INFO] - Oneforall  - ᴅʀᴏᴘ ʏᴏᴜʀ ɢɪʀʟꜰʀɪᴇɴᴅ'ꜱ ɴᴜᴍʙᴇʀ ᴀᴛ  ᴊᴏɪɴ https://t.me/PiratesMainchat ꜰᴏʀ ᴀɴʏ ɪꜱꜱᴜᴇꜱ
+[27-Aug-26 12:15:04 - ERROR] - pyrogram.dispatcher - Unexpected exception raised in RawUpdateHandler:
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 448, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto/pyrogram_client.py", line 90, in on_update
+    chat_id = self.chat_id(data2[update.chat_id])
+AttributeError: 'UpdateGroupCall' object has no attribute 'chat_id'
+[27-Aug-26 12:16:51 - INFO] - Oneforall.core.userbot - Stopping Assistants...
+[27-Aug-26 12:16:51 - INFO] - Oneforall - Stopping One for all Bot...
+[27-Aug-26 12:18:15 - INFO] - Oneforall.core.dir - Directories Updated.
+[27-Aug-26 12:18:15 - INFO] - Oneforall.core.git - Git Client Found [VPS DEPLOYER]
+[27-Aug-26 12:18:15 - INFO] - Oneforall.misc -  Database loaded..
+[27-Aug-26 12:18:15 - INFO] - Oneforall.core.bot - Starting Bot...
+[27-Aug-26 12:18:16 - INFO] - Oneforall.misc - Sudo users loaded...
+[27-Aug-26 12:18:23 - INFO] - Oneforall.core.bot - Music Bot Started as 𓆩ℛᴜ֟፝ʜɪ 𓆩ꨄ︎𓆪 𝐌ᴜ֟፝sɪᴄ𓆪˼ 
+[27-Aug-26 12:18:23 - INFO] - Oneforall.plugins - Successfully Imported Modules...
+[27-Aug-26 12:18:23 - INFO] - Oneforall.core.userbot - Starting Assistants...
+[27-Aug-26 12:18:24 - INFO] - Oneforall.core.userbot - Assistant Started as <a href=tg://user?id=7190723687>˹ 𓆩ℛᴏ֟፝ᴏʜɪ ⚡ ᴀssɪsᴛᴀɴᴛ ˼ ♪</a>
+[27-Aug-26 12:18:24 - INFO] - Oneforall.core.call - Starting PyTgCalls Client...
+
+[27-Aug-26 12:18:32 - INFO] - Oneforall  - ᴅʀᴏᴘ ʏᴏᴜʀ ɢɪʀʟꜰʀɪᴇɴᴅ'ꜱ ɴᴜᴍʙᴇʀ ᴀᴛ  ᴊᴏɪɴ https://t.me/PiratesMainchat ꜰᴏʀ ᴀɴʏ ɪꜱꜱᴜᴇꜱ
+[27-Aug-26 12:18:55 - ERROR] - pyrogram.dispatcher - Unexpected exception raised in RawUpdateHandler:
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 448, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto/pyrogram_client.py", line 90, in on_update
+    chat_id = self.chat_id(data2[update.chat_id])
+AttributeError: 'UpdateGroupCall' object has no attribute 'chat_id'
+[27-Aug-26 12:19:56 - INFO] - Oneforall.core.userbot - Stopping Assistants...
+[27-Aug-26 12:19:56 - INFO] - Oneforall - Stopping One for all Bot...
+[27-Aug-26 12:21:16 - INFO] - Oneforall.core.dir - Directories Updated.
+[27-Aug-26 12:21:16 - INFO] - Oneforall.core.git - Git Client Found [VPS DEPLOYER]
+[27-Aug-26 12:21:16 - INFO] - Oneforall.misc -  Database loaded..
+[27-Aug-26 12:21:16 - INFO] - Oneforall.core.bot - Starting Bot...
+[27-Aug-26 12:21:16 - INFO] - Oneforall.misc - Sudo users loaded...
+[27-Aug-26 12:21:22 - INFO] - Oneforall.core.bot - Music Bot Started as 𓆩ℛᴏ֟፝ᴏʜɪ 🌙 𝐌ᴜ֟፝sɪᴄ𓆪˼ ♪ 
+[27-Aug-26 12:21:22 - INFO] - Oneforall.plugins - Successfully Imported Modules...
+[27-Aug-26 12:21:22 - INFO] - Oneforall.core.userbot - Starting Assistants...
+[27-Aug-26 12:21:23 - INFO] - Oneforall.core.userbot - Assistant Started as <a href=tg://user?id=7190723687>˹ 𓆩ℛᴏ֟፝ᴏʜɪ ⚡ ᴀssɪsᴛᴀɴᴛ ˼ ♪</a>
+[27-Aug-26 12:21:23 - INFO] - Oneforall.core.call - Starting PyTgCalls Client...
+
+[27-Aug-26 12:21:31 - INFO] - Oneforall  - ᴅʀᴏᴘ ʏᴏᴜʀ ɢɪʀʟꜰʀɪᴇɴᴅ'ꜱ ɴᴜᴍʙᴇʀ ᴀᴛ  ᴊᴏɪɴ https://t.me/PiratesMainchat ꜰᴏʀ ᴀɴʏ ɪꜱꜱᴜᴇꜱ
+[27-Aug-26 12:21:58 - ERROR] - pyrogram.dispatcher - Unexpected exception raised in RawUpdateHandler:
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 448, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto/pyrogram_client.py", line 90, in on_update
+    chat_id = self.chat_id(data2[update.chat_id])
+AttributeError: 'UpdateGroupCall' object has no attribute 'chat_id'
+[27-Aug-26 12:25:30 - ERROR] - pyrogram.dispatcher - Unexpected exception raised in RawUpdateHandler:
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 448, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto/pyrogram_client.py", line 90, in on_update
+    chat_id = self.chat_id(data2[update.chat_id])
+AttributeError: 'UpdateGroupCall' object has no attribute 'chat_id'
+[27-Aug-26 12:29:41 - ERROR] - pyrogram.dispatcher - Unexpected exception raised in RawUpdateHandler:
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 448, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto/pyrogram_client.py", line 90, in on_update
+    chat_id = self.chat_id(data2[update.chat_id])
+AttributeError: 'UpdateGroupCall' object has no attribute 'chat_id'
+[27-Aug-26 12:31:35 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-19195' coro=<Call.decorators.<locals>.stream_end_handler() done, defined at /home/nand/Roohi/Oneforall/core/call.py:625> exception=NotInGroupCallError("The userbot there isn't in a group call")>
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/methods/groups/leave_group_call.py", line 35, in leave_group_call
+    await ToAsync(
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/to_async.py", line 13, in _run
+    return await self._loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+ntgcalls.ConnectionNotFound: Connection with chat id "-1004475834688" not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nand/Roohi/Oneforall/core/call.py", line 363, in change_stream
+    return await client.leave_group_call(chat_id)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mutex.py", line 33, in async_wrapper
+    return await func(*args, **kwargs)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/statictypes.py", line 96, in async_wrapper
+    return await func(*args, **kwargs)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto_required.py", line 19, in async_wrapper
+    return await func(*args, **kwargs)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/methods/groups/leave_group_call.py", line 40, in leave_group_call
+    raise NotInGroupCallError()
+pytgcalls.exceptions.NotInGroupCallError: The userbot there isn't in a group call
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nand/Roohi/Oneforall/core/call.py", line 367, in change_stream
+    return await client.leave_group_call(chat_id)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mutex.py", line 33, in async_wrapper
+    return await func(*args, **kwargs)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/statictypes.py", line 96, in async_wrapper
+    return await func(*args, **kwargs)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto_required.py", line 19, in async_wrapper
+    return await func(*args, **kwargs)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/methods/groups/leave_group_call.py", line 40, in leave_group_call
+    raise NotInGroupCallError()
+pytgcalls.exceptions.NotInGroupCallError: The userbot there isn't in a group call
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nand/Roohi/Oneforall/core/call.py", line 633, in stream_end_handler
+    await self.change_stream(client, update.chat_id)
+  File "/home/nand/Roohi/Oneforall/core/call.py", line 369, in change_stream
+    return await client.leave_group_call(chat_id)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mutex.py", line 33, in async_wrapper
+    return await func(*args, **kwargs)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/statictypes.py", line 96, in async_wrapper
+    return await func(*args, **kwargs)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto_required.py", line 19, in async_wrapper
+    return await func(*args, **kwargs)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/methods/groups/leave_group_call.py", line 40, in leave_group_call
+    raise NotInGroupCallError()
+pytgcalls.exceptions.NotInGroupCallError: The userbot there isn't in a group call
+[27-Aug-26 12:35:42 - ERROR] - pyrogram.dispatcher - Unexpected exception raised in RawUpdateHandler:
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 448, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto/pyrogram_client.py", line 90, in on_update
+    chat_id = self.chat_id(data2[update.chat_id])
+AttributeError: 'UpdateGroupCall' object has no attribute 'chat_id'
+[27-Aug-26 12:37:32 - ERROR] - pyrogram.dispatcher - Unexpected exception raised in RawUpdateHandler:
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 448, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto/pyrogram_client.py", line 90, in on_update
+    chat_id = self.chat_id(data2[update.chat_id])
+AttributeError: 'UpdateGroupCall' object has no attribute 'chat_id'
+[27-Aug-26 12:38:18 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-32368' coro=<Call.decorators.<locals>.stream_end_handler() done, defined at /home/nand/Roohi/Oneforall/core/call.py:625> exception=NotInGroupCallError("The userbot there isn't in a group call")>
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/methods/groups/leave_group_call.py", line 35, in leave_group_call
+    await ToAsync(
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/to_async.py", line 13, in _run
+    return await self._loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+ntgcalls.ConnectionNotFound: Connection with chat id "-1003809966719" not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nand/Roohi/Oneforall/core/call.py", line 363, in change_stream
+    return await client.leave_group_call(chat_id)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mutex.py", line 33, in async_wrapper
+    return await func(*args, **kwargs)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/statictypes.py", line 96, in async_wrapper
+    return await func(*args, **kwargs)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto_required.py", line 19, in async_wrapper
+    return await func(*args, **kwargs)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/methods/groups/leave_group_call.py", line 40, in leave_group_call
+    raise NotInGroupCallError()
+pytgcalls.exceptions.NotInGroupCallError: The userbot there isn't in a group call
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nand/Roohi/Oneforall/core/call.py", line 367, in change_stream
+    return await client.leave_group_call(chat_id)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mutex.py", line 33, in async_wrapper
+    return await func(*args, **kwargs)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/statictypes.py", line 96, in async_wrapper
+    return await func(*args, **kwargs)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto_required.py", line 19, in async_wrapper
+    return await func(*args, **kwargs)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/methods/groups/leave_group_call.py", line 40, in leave_group_call
+    raise NotInGroupCallError()
+pytgcalls.exceptions.NotInGroupCallError: The userbot there isn't in a group call
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nand/Roohi/Oneforall/core/call.py", line 633, in stream_end_handler
+    await self.change_stream(client, update.chat_id)
+  File "/home/nand/Roohi/Oneforall/core/call.py", line 369, in change_stream
+    return await client.leave_group_call(chat_id)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mutex.py", line 33, in async_wrapper
+    return await func(*args, **kwargs)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/statictypes.py", line 96, in async_wrapper
+    return await func(*args, **kwargs)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto_required.py", line 19, in async_wrapper
+    return await func(*args, **kwargs)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/methods/groups/leave_group_call.py", line 40, in leave_group_call
+    raise NotInGroupCallError()
+pytgcalls.exceptions.NotInGroupCallError: The userbot there isn't in a group call
+[27-Aug-26 12:38:23 - ERROR] - pyrogram.dispatcher - Unexpected exception raised in RawUpdateHandler:
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 448, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto/pyrogram_client.py", line 90, in on_update
+    chat_id = self.chat_id(data2[update.chat_id])
+AttributeError: 'UpdateGroupCall' object has no attribute 'chat_id'
+[27-Aug-26 12:38:24 - ERROR] - pyrogram.dispatcher - Unexpected exception raised in RawUpdateHandler:
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 448, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto/pyrogram_client.py", line 90, in on_update
+    chat_id = self.chat_id(data2[update.chat_id])
+AttributeError: 'UpdateGroupCall' object has no attribute 'chat_id'
+[27-Aug-26 12:39:17 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-34018' coro=<Call.decorators.<locals>.stream_end_handler() done, defined at /home/nand/Roohi/Oneforall/core/call.py:625> exception=FloodWait('Telegram says: [420 FLOOD_WAIT_X] - Please wait 23 seconds before repeating the action. (caused by "messages.SendMedia")')>
+Traceback (most recent call last):
+  File "/home/nand/Roohi/Oneforall/core/call.py", line 633, in stream_end_handler
+    await self.change_stream(client, update.chat_id)
+  File "/home/nand/Roohi/Oneforall/core/call.py", line 565, in change_stream
+    run = await app.send_photo(
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/methods/messages/send_photo.py", line 337, in send_photo
+    r = await self.invoke(rpc, business_connection_id=business_connection_id)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 107, in invoke
+    r = await session.invoke(
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 551, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 514, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 156, in raise_it
+    raise error_type(
+pyrogram.errors.exceptions.flood_420.FloodWait: Telegram says: [420 FLOOD_WAIT_X] - Please wait 23 seconds before repeating the action. (caused by "messages.SendMedia")
+[27-Aug-26 12:39:40 - ERROR] - pyrogram.dispatcher - Unexpected exception raised in MessageHandler:
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 448, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/nand/Roohi/Oneforall/utils/decorators/language.py", line 54, in wrapper
+    return await mystic(_, message, language)
+  File "/home/nand/Roohi/Oneforall/plugins/bot/start.py", line 192, in start_pm
+    return await app.send_message(
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/methods/messages/send_message.py", line 351, in send_message
+    r = await self.invoke(rpc, business_connection_id=business_connection_id)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 107, in invoke
+    r = await session.invoke(
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 551, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 514, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 156, in raise_it
+    raise error_type(
+pyrogram.errors.exceptions.flood_420.FloodWait: Telegram says: [420 FLOOD_WAIT_X] - Please wait 25 seconds before repeating the action. (caused by "messages.SendMessage")
+[27-Aug-26 12:40:32 - ERROR] - pyrogram.dispatcher - Unexpected exception raised in RawUpdateHandler:
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 448, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto/pyrogram_client.py", line 90, in on_update
+    chat_id = self.chat_id(data2[update.chat_id])
+AttributeError: 'UpdateGroupCall' object has no attribute 'chat_id'
+[27-Aug-26 12:40:35 - ERROR] - pyrogram.dispatcher - Unexpected exception raised in MessageHandler:
+Traceback (most recent call last):
+  File "/home/nand/Roohi/Oneforall/plugins/play/play.py", line 361, in play_commnd
+    await stream(
+  File "/home/nand/Roohi/Oneforall/utils/stream/stream.py", line 191, in stream
+    await app.send_photo(
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/methods/messages/send_photo.py", line 337, in send_photo
+    r = await self.invoke(rpc, business_connection_id=business_connection_id)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 107, in invoke
+    r = await session.invoke(
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 551, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 514, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 156, in raise_it
+    raise error_type(
+pyrogram.errors.exceptions.flood_420.FloodWait: Telegram says: [420 FLOOD_WAIT_X] - Please wait 30 seconds before repeating the action. (caused by "messages.SendMedia")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 448, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/nand/Roohi/Oneforall/utils/decorators/play.py", line 184, in wrapper
+    return await command(
+  File "/home/nand/Roohi/Oneforall/plugins/play/play.py", line 377, in play_commnd
+    return await mystic.edit_text(err)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/types/messages_and_media/message.py", line 9303, in edit_text
+    return await self._client.edit_message_text(
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/methods/messages/edit_message_text.py", line 136, in edit_message_text
+    r = await self.invoke(
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 107, in invoke
+    r = await session.invoke(
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 551, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 514, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 156, in raise_it
+    raise error_type(
+pyrogram.errors.exceptions.flood_420.FloodWait: Telegram says: [420 FLOOD_WAIT_X] - Please wait 30 seconds before repeating the action. (caused by "messages.EditMessage")
+[27-Aug-26 12:41:49 - ERROR] - pyrogram.dispatcher - Unexpected exception raised in MessageHandler:
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 448, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/nand/Roohi/Oneforall/utils/decorators/play.py", line 184, in wrapper
+    return await command(
+  File "/home/nand/Roohi/Oneforall/plugins/play/play.py", line 56, in play_commnd
+    mystic = await message.reply_text(
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/types/messages_and_media/message.py", line 5127, in reply
+    return await self._client.send_message(
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/methods/messages/send_message.py", line 351, in send_message
+    r = await self.invoke(rpc, business_connection_id=business_connection_id)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 107, in invoke
+    r = await session.invoke(
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 551, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 514, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 156, in raise_it
+    raise error_type(
+pyrogram.errors.exceptions.flood_420.FloodWait: Telegram says: [420 FLOOD_WAIT_X] - Please wait 17 seconds before repeating the action. (caused by "messages.SendMessage")
+[27-Aug-26 12:42:48 - ERROR] - pyrogram.dispatcher - Unexpected exception raised in RawUpdateHandler:
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 448, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto/pyrogram_client.py", line 90, in on_update
+    chat_id = self.chat_id(data2[update.chat_id])
+AttributeError: 'UpdateGroupCall' object has no attribute 'chat_id'
+[27-Aug-26 12:43:49 - ERROR] - pyrogram.dispatcher - Unexpected exception raised in RawUpdateHandler:
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 448, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto/pyrogram_client.py", line 90, in on_update
+    chat_id = self.chat_id(data2[update.chat_id])
+AttributeError: 'UpdateGroupCall' object has no attribute 'chat_id'
+[27-Aug-26 12:43:49 - ERROR] - pyrogram.dispatcher - Unexpected exception raised in RawUpdateHandler:
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 448, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto/pyrogram_client.py", line 90, in on_update
+    chat_id = self.chat_id(data2[update.chat_id])
+AttributeError: 'UpdateGroupCall' object has no attribute 'chat_id'
+[27-Aug-26 12:55:18 - ERROR] - pyrogram.dispatcher - Unexpected exception raised in RawUpdateHandler:
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 448, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto/pyrogram_client.py", line 90, in on_update
+    chat_id = self.chat_id(data2[update.chat_id])
+AttributeError: 'UpdateGroupCall' object has no attribute 'chat_id'
+[27-Aug-26 12:55:42 - ERROR] - pyrogram.dispatcher - Unexpected exception raised in RawUpdateHandler:
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 448, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto/pyrogram_client.py", line 90, in on_update
+    chat_id = self.chat_id(data2[update.chat_id])
+AttributeError: 'UpdateGroupCall' object has no attribute 'chat_id'
+[27-Aug-26 12:56:05 - ERROR] - pyrogram.dispatcher - Unexpected exception raised in RawUpdateHandler:
+Traceback (most recent call last):
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 448, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/nand/Roohi/venv/lib/python3.10/site-packages/pytgcalls/mtproto/pyrogram_client.py", line 90, in on_update
+    chat_id = self.chat_id(data2[update.chat_id])
+AttributeError: 'UpdateGroupCall' object has no attribute 'chat_id'

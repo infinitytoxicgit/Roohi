@@ -174,12 +174,18 @@ class YouTubeAPI:
         if "&" in link:
             link = link.split("&")[0]
         proc = await asyncio.create_subprocess_exec(
-            "yt-dlp","--remote-components","ejs:github","--js-runtimes","bun","--cookies","/root/Roohi/youtube.txt",
+            "yt-dlp",
+            "--extractor-args",
+            "youtubepot-bgutilscript:script_path=/home/nand/bgutil-ytdlp-pot-provider/server/build/generate_once.js",
+            "--remote-components",
+            "ejs:github",
+            "--js-runtimes",
+            "bun:/home/nand/.bun/bin/bun",
             "--cookies",
-            "/root/Roohi/youtube.txt",
+            "/home/nand/Roohi/youtube.txt",
             "-g",
             "-f",
-            "best",
+            "bestaudio/best",
             f"{link}",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE,
@@ -212,20 +218,59 @@ class YouTubeAPI:
             link = self.base + link
         if "&" in link:
             link = link.split("&")[0]
-        results = VideosSearch(link, limit=1)
-        for result in (await results.next())["result"]:
-            title = result["title"]
-            duration_min = result["duration"]
-            vidid = result["id"]
-            yturl = result["link"]
-            thumbnail = result["thumbnails"][0]["url"].split("?")[0]
+
+        query = link
+        if not re.search(r"(?:youtube\\.com|youtu\\.be)", link):
+            query = f"ytsearch5:{link}"
+
+        opts = {
+            "quiet": True,
+            "no_warnings": True,
+            "extract_flat": True,
+            "cookiefile": "/home/nand/Roohi/youtube.txt",
+            "js_runtimes": {
+                "bun": {
+                    "path": "/home/nand/.bun/bin/bun"
+                }
+            },
+            "remote_components": ["ejs:github"],
+            "extractor_args": {
+                "youtubepot-bgutilscript": {
+                    "script_path": "/home/nand/bgutil-ytdlp-pot-provider/server/build/generate_once.js"
+                }
+            },
+        }
+
+        with yt_dlp.YoutubeDL(opts) as ydl:
+            info = ydl.extract_info(query, download=False)
+
+        entries = info.get("entries") or [info]
+        entry = next((x for x in entries if x and x.get("id")), None)
+
+        if not entry:
+            raise Exception("No YouTube result found")
+
+        vidid = entry["id"]
+        title = entry.get("title") or "Unknown Title"
+        duration_sec = entry.get("duration")
+
+        if duration_sec:
+            duration_min = f"{int(duration_sec)//60}:{int(duration_sec)%60:02d}"
+        else:
+            duration_min = None
+
+        yturl = f"https://www.youtube.com/watch?v={vidid}"
+        thumbnail = entry.get("thumbnail") or f"https://i.ytimg.com/vi/{vidid}/hqdefault.jpg"
+
         track_details = {
             "title": title,
             "link": yturl,
             "vidid": vidid,
             "duration_min": duration_min,
+            "duration_sec": duration_sec or 0,
             "thumb": thumbnail,
         }
+
         return track_details, vidid
 
     async def formats(self, link: str, videoid: Union[bool, str] = None):
@@ -233,7 +278,7 @@ class YouTubeAPI:
             link = self.base + link
         if "&" in link:
             link = link.split("&")[0]
-        ytdl_opts = {"quiet": True, "cookiefile": "/root/Roohi/youtube.txt"}
+        ytdl_opts = {"quiet": True, "cookiefile": "/home/nand/Roohi/youtube.txt"}
         ydl = yt_dlp.YoutubeDL(ytdl_opts)
         with ydl:
             formats_available = []
@@ -304,24 +349,29 @@ class YouTubeAPI:
 
         def audio_dl():
             ydl_optssx = {
-                "format": "18/best[ext=mp4]/best",
+                "format": "bestaudio/best",
                 "outtmpl": "downloads/%(id)s.%(ext)s",
                 "geo_bypass": True,
                 "nocheckcertificate": True,
                 "quiet": True,
                 "no_warnings": True,
-                "cookiefile": "/root/Roohi/youtube.txt",
+                "cookiefile": "/home/nand/Roohi/youtube.txt",
                 "extractor_args": {
                     "youtube": {
                         "player_client": ["mweb"],
                     }
                 },
                 "js_runtimes": {
-                    "node": {
-                        "path": "/usr/bin/node"
+                    "bun": {
+                        "path": "/home/nand/.bun/bin/bun"
                     }
                 },
                 "remote_components": ["ejs:github"],
+                "extractor_args": {
+                    "youtubepot-bgutilscript": {
+                        "script_path": "/home/nand/bgutil-ytdlp-pot-provider/server/build/generate_once.js"
+                    }
+                },
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             info = x.extract_info(link, download=False)
@@ -336,24 +386,29 @@ class YouTubeAPI:
 
         def video_dl():
             ydl_optssx = {
-                "format": "18/best[ext=mp4]/best",
+                "format": "bestaudio/best",
                 "outtmpl": "downloads/%(id)s.%(ext)s",
                 "geo_bypass": True,
                 "nocheckcertificate": True,
                 "quiet": True,
                 "no_warnings": True,
-                "cookiefile": "/root/Roohi/youtube.txt",
+                "cookiefile": "/home/nand/Roohi/youtube.txt",
                 "extractor_args": {
                     "youtube": {
                         "player_client": ["mweb"],
                     }
                 },
                 "js_runtimes": {
-                    "node": {
-                        "path": "/usr/bin/node"
+                    "bun": {
+                        "path": "/home/nand/.bun/bin/bun"
                     }
                 },
                 "remote_components": ["ejs:github"],
+                "extractor_args": {
+                    "youtubepot-bgutilscript": {
+                        "script_path": "/home/nand/bgutil-ytdlp-pot-provider/server/build/generate_once.js"
+                    }
+                },
             }
 
             x = yt_dlp.YoutubeDL(ydl_optssx)
@@ -381,7 +436,7 @@ class YouTubeAPI:
                 "no_warnings": True,
                 "prefer_ffmpeg": True,
                 "merge_output_format": "mp4",
-                "cookiefile": "/root/Roohi/youtube.txt",
+                "cookiefile": "/home/nand/Roohi/youtube.txt",
                 "extractor_args": {"youtube": {"player_client": ["mweb"]}},
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
@@ -404,7 +459,7 @@ class YouTubeAPI:
                         "preferredquality": "192",
                     }
                 ],
-                "cookiefile": "/root/Roohi/youtube.txt",
+                "cookiefile": "/home/nand/Roohi/youtube.txt",
                 "extractor_args": {"youtube": {"player_client": ["mweb"]}},
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
